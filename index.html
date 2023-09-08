@@ -10,7 +10,7 @@
 
 <body>
     <div class="calculator">
-        <input id="display" readonly>
+        <input id="display" placeholder="0" readonly>
         <div class="buttons">
             <button onclick="handleButton('1')">1</button>
             <button onclick="handleButton('2')">2</button>
@@ -22,12 +22,12 @@
             <button onclick="handleButton('8')">8</button>
             <button onclick="handleButton('9')">9</button>
             <button onclick="handleButton('0')">0</button>
-            <button onclick="handleButton('+')">+</button>
-            <button onclick="handleButton('-')">-</button>
-            <button onclick="handleButton('*')">*</button>
-            <button onclick="handleButton('/')">/</button>
+            <button onclick="handleButton('+')" data-action="add">+</button>
+            <button onclick="handleButton('-')" data-action="substract">-</button>
+            <button onclick="handleButton('*')" data-action="multiply">*</button>
+            <button onclick="handleButton('/')" data-action="divide">/</button>
             <button onclick="calculate('=')">=</button>
-            <button onclick="handleButton('.')">.</button>
+            <button onclick="handleButton('.')" data-action="decimal">.</button>
             <button onclick="clearDisplay('C')">C</button>
         </div>
     </div>
